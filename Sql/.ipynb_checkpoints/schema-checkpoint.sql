@@ -62,8 +62,6 @@ REFERENCES "card_holder" ("id");
 
 ALTER TABLE "credit_card" ADD CONSTRAINT "check_credit_card_length"  CHECK (char_length("card") <= 20);
 
---ALTER TABLE "credit_card" DROP CONSTRAINT check_credit_card_length
-
 ALTER TABLE "merchant" ADD CONSTRAINT "fk_merchant_id_merchant_category" FOREIGN KEY("id_merchant_category")
 REFERENCES "merchant_category" ("id");
 
