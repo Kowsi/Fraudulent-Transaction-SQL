@@ -40,7 +40,7 @@ Define a database model to store the credit card transactions data and create a 
 
 Entity relationship diagram (ERD) for storing the Transaction details.
 
-<img src="Images/Transaction_ERD.png" width="500">
+<img src="Images/Transaction_ERD.png">
 
 ### Data Engineering
 
@@ -65,14 +65,13 @@ Below are the some of the analysis:
 
 1. Top 100 highest transactions during the time period 7:00 a.m. to 9:00 a.m.
 
-    Below we see during early hours more money spend on Bar. There might be fraudulent transactions.
+    <img src="Images/100_transactions.png" width="900">
 
-    <img src="Images/100_transactions.png" width="500">
-
+    * __Observations__ : `We see during early hours more money spend on Bar. It seems to be fraudulent transactions.`
 
 2. Created a report for any fraudulent transactions in the history of two of the most important customers of the firm. For privacy reasons, we only know that their cardholders' IDs are 18 and 2. Using hvPlot, created teh line plot representing transactions over the course of the year for both cardholder.
     
-    <img src="Images/cardholder2_18.png" width="500">
+    <img src="Images/cardholder2_18.png" width="800">
 
     * __Observations__ : `Cardholder_2 seems to be suspectful, as he made too many small trasactions and cardholder_18 made high amount anomaly trasaction`
 
@@ -81,7 +80,7 @@ Below are the some of the analysis:
 
   * Using Plotly Express, created a series of six box plots, one for each month, in order to identify how many outliers there are per month for cardholder ID 25.
 
-  <img src="Images/cardholder_25.png" width="500">
+  <img src="Images/cardholder_25.png">
   
   * __Observations__ : `We do see outliners for each month for cardholder_25 whose trasactions are highly spend on Bar, Pub, Resturant`
 
@@ -92,9 +91,9 @@ Another approach to identify fraudulent transactions is to look for outliers in 
 
 * #### Identifying Outliers using Standard Deviation
 
-    <img src="Images/anomalous_trans_std.png" width="500">
+    <img src="Images/anomalous_trans_std.png" height='350'>
 
 * #### Identifying Outliers using Interquartile Range
     
-    <img src="Images/anomalous_trans_iqr.png" width="500">
+    <img src="Images/anomalous_trans_iqr.png" height='350'>
     
