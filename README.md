@@ -40,7 +40,7 @@ Define a database model to store the credit card transactions data and create a 
 
 Entity relationship diagram (ERD) for storing the Transaction details.
 
-![ERD](Images/Transaction_ERD.png)
+<img src="Images/Transaction_ERD.png" width="100">
 
 ### Data Engineering
 
@@ -67,23 +67,23 @@ Below are the some of the analysis:
 
     Below we see during early hours more money spend on Bar. There might be fraudulent transactions.
 
-  ![100 Transaction](Images/100_transactions.png)
+    <img src="Images/100_transactions.png" width="100">
 
 
 2. Created a report for any fraudulent transactions in the history of two of the most important customers of the firm. For privacy reasons, we only know that their cardholders' IDs are 18 and 2. Using hvPlot, created teh line plot representing transactions over the course of the year for both cardholder.
+    
+    <img src="Images/cardholder2_18.png" width="100">
 
-    ![2 Transaction](Images/cardholder2_18.png)
-
-    * __Observations__ : `Both are suspectful because cardholder_2 made too many small trasactions and cardholder_18 made high amount anomaly trasaction`
+    * __Observations__ : `Cardholder_2 seems to be suspectful, as he made too many small trasactions and cardholder_18 made high amount anomaly trasaction`
 
 
 3. The CEO of the firm's biggest customer suspects that someone has used her corporate credit card without authorization in the first quarter of 2018 to pay for several expensive restaurant bills. Find any anomalous transactions during that period.
 
   * Using Plotly Express, created a series of six box plots, one for each month, in order to identify how many outliers there are per month for cardholder ID 25.
 
-  ![2 Transaction](Images/cardholder_25.png)
+  <img src="Images/cardholder_25.png" width="100">
   
-  * __Observations__ : `We do see suspectful anomalies for cardholder_25 whose trasactions are highly spend on Bar, Pub, Resturant`
+  * __Observations__ : `We do see outliners for each month for cardholder_25 whose trasactions are highly spend on Bar, Pub, Resturant`
 
 
 ## Challenge
@@ -92,9 +92,9 @@ Another approach to identify fraudulent transactions is to look for outliers in 
 
 * #### Identifying Outliers using Standard Deviation
 
-    ![2 Transaction](Images/anomalous_trans_std.png)
+    <img src="Images/anomalous_trans_std.png" width="100">
 
 * #### Identifying Outliers using Interquartile Range
-
-    ![2 Transaction](Images/anomalous_trans_iqr.png)
+    
+    <img src="Images/anomalous_trans_iqr.png" width="100">
     
